@@ -12,6 +12,7 @@
 				<Option type="1" />
 				<Option compiler="gcc" />
 				<Compiler>
+					<Add option="-std=c++11" />
 					<Add option="-g" />
 				</Compiler>
 				<Linker>
@@ -46,6 +47,19 @@
 		<Linker>
 			<Add directory="D:/SFML-2.3/lib" />
 		</Linker>
+		<Unit filename="Application.cpp" />
+		<Unit filename="Application.hpp" />
+		<Unit filename="WindowSystem/GuiButton.cpp" />
+		<Unit filename="WindowSystem/GuiButton.hpp" />
+		<Unit filename="WindowSystem/GuiIngame.cpp" />
+		<Unit filename="WindowSystem/GuiIngame.hpp" />
+		<Unit filename="WindowSystem/GuiMainMenu.cpp" />
+		<Unit filename="WindowSystem/GuiMainMenu.hpp" />
+		<Unit filename="WindowSystem/GuiScreen.cpp" />
+		<Unit filename="WindowSystem/GuiScreen.hpp" />
+		<Unit filename="WindowSystem/WindowManager.cpp" />
+		<Unit filename="WindowSystem/WindowManager.hpp" />
+		<Unit filename="WindowSystem/WindowSystemEnums.h" />
 		<Unit filename="main.cpp" />
 		<Extensions>
 			<code_completion />

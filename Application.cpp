@@ -17,13 +17,15 @@ void Application::run()
 {
     while(m_running)///Boucle principale
     {
-        m_windowManager->checkEvents();
-        m_windowManager->clear();
+        m_windowManager->checkEvents();///Boucle d'evennement
+
         if(!m_pause)
         {
-
+            m_windowManager->clear();///nettoie la fenetre
+            m_windowManager->updateWindow();///met a jour la fenetre et dessine l'écran actuel
+            m_windowManager->display();///affiche le contenue du buffer de dessin
         }
-        m_windowManager->display();
+
     }
 }
 

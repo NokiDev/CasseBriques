@@ -1,10 +1,13 @@
 #include "WindowManager.hpp"
 #include "../Application.hpp"
+#include "GuiScreen.hpp"
 
 WindowManager* WindowManager::WINDOW_MANAGER;
 
 WindowManager::WindowManager(Application* application, int winWidth, int winHeight, std::string winName)
 {
+    //displayScreen(new GuiMainMenu());
+    m_currentGuiScreen = nullptr;
     m_application = application;
     m_window.create(sf::VideoMode(winWidth, winHeight), winName);
     WindowManager::WINDOW_MANAGER = this;
@@ -51,6 +54,15 @@ void WindowManager::clear()
     m_window.clear();
 }
 
+void WindowManager::updateWindow()
+{
+    if(m_currentGuiScreen != nullptr)
+    {
+        m_currentGuiScreen->update();
+        m_currentGuiScreen->draw();
+    }
+}
+
 void WindowManager::display()
 {
     m_window.display();
@@ -59,4 +71,14 @@ void WindowManager::display()
 void WindowManager::draw(const sf::Drawable &drawable, const sf::RenderStates &states)
 {
     m_window.draw(drawable, states);
+}
+
+void WindowManager::displaySubScreen()
+{
+
+}
+
+void WindowManager::displayScreen(GuiScreen* guiScreen)
+{
+    m_currentGuiScreen = guiScreen;
 }

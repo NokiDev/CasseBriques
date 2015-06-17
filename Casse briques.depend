@@ -3,7 +3,7 @@
 	<iostream>
 	"Application.hpp"
 
-1434532428 source:d:\projets persos\casse brique git\application.cpp
+1434563867 source:d:\projets persos\casse brique git\application.cpp
 	"Application.hpp"
 	"WindowSystem/WindowManager.hpp"
 
@@ -390,7 +390,19 @@
 	<string>
 	<vector>
 
-1434532447 d:\projets persos\casse brique git\windowsystem\windowmanager.hpp
+1434565280 d:\projets persos\casse brique git\windowsystem\windowmanager.hpp
 	<SFML/System.hpp>
 	<SFML/Graphics.hpp>
+	<iostream>
+
+1434564600 source:d:\projets persos\casse brique git\windowsystem\guiingame.cpp
+	"GuiIngame.hpp"
+
+1434564546 d:\projets persos\casse brique git\windowsystem\guiingame.hpp
+	"GuiScreen.hpp"
+
+1434563603 d:\projets persos\casse brique git\windowsystem\guiscreen.hpp
+
+1434563593 source:d:\projets persos\casse brique git\windowsystem\guiscreen.cpp
+	"GuiScreen.hpp"
 

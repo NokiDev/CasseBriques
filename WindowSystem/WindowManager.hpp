@@ -8,7 +8,10 @@ ainsi que les "Scenes"(Menu Pause, menu principal etc...)
 
 #include <SFML/System.hpp>
 #include <SFML/Graphics.hpp>
+#include <iostream>
+class GuiScreen;
 class Application;
+class GuiScreen;
 class WindowManager
 {
     public :
@@ -17,15 +20,19 @@ class WindowManager
         ~WindowManager();
 
         void checkEvents();///Vérifie les évènements(fenetre, clavier, souris, etc...)
-
+        void updateWindow();
         void draw(const sf::Drawable &drawable, const sf::RenderStates &states = sf::RenderStates::Default);///Dessine dans le buffer
         void display();///Affiche tous les objets stocker dans le buffer de dessin
         void clear();///Nettoie la fenêtre
+
+        void displayScreen(GuiScreen* screen);
+        void displaySubScreen();
 
     private:
         sf::Event m_event;
         sf::RenderWindow m_window;
         Application* m_application;
+        GuiScreen* m_currentGuiScreen;
 
 
 };
