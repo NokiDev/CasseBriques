@@ -1,9 +1,10 @@
 #include <iostream>
-
+#include "Application.hpp"
 using namespace std;
 
 int main()
 {
-    cout << "Hello world!" << endl;
+    Application application;
+    application.run();
     return 0;
 }
