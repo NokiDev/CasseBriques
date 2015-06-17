@@ -17,6 +17,7 @@ Permet de relier les différents modules (Son, fenêtre, jeu)
 #include <SFML/Graphics.hpp>
 #include <string>
 
+class WindowManager;
 class Application
 {
     public :
@@ -27,12 +28,16 @@ class Application
         void stop();
         void run();
 
+        void pause();
+        void resume();
+
+        bool isPaused()const;
+
     private :
 
         void mainLoop();
 
-        sf::Event m_event;
-        sf::RenderWindow m_window;
+        WindowManager * m_windowManager;
         bool m_pause;
         bool m_running;
 };

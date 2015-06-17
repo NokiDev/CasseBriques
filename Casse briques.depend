@@ -3,10 +3,11 @@
 	<iostream>
 	"Application.hpp"
 
-1434528192 source:d:\projets persos\casse brique git\application.cpp
+1434532428 source:d:\projets persos\casse brique git\application.cpp
 	"Application.hpp"
+	"WindowSystem/WindowManager.hpp"
 
-1434528005 d:\projets persos\casse brique git\application.hpp
+1434532434 d:\projets persos\casse brique git\application.hpp
 	<SFML/System.hpp>
 	<SFML/Graphics.hpp>
 	<string>
@@ -388,4 +389,8 @@
 	<SFML/System/String.hpp>
 	<string>
 	<vector>
+
+1434532447 d:\projets persos\casse brique git\windowsystem\windowmanager.hpp
+	<SFML/System.hpp>
+	<SFML/Graphics.hpp>
 
