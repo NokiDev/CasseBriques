@@ -21,6 +21,7 @@ class WindowManager;
 class Application
 {
     public :
+        static float DELTA_TIME;
         Application(int windowWidth = 720, int windowHeight = 480, std::string windowName = "Mon jeu");
         ~Application();
 
@@ -36,7 +37,7 @@ class Application
     private :
 
         void mainLoop();
-
+        sf::Clock m_clock;
         WindowManager * m_windowManager;
         bool m_pause;
         bool m_running;

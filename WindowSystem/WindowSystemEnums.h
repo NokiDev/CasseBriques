@@ -1,8 +1,7 @@
 #ifndef WINDOWSYSTEMENUMS_H_INCLUDED
 #define WINDOWSYSTEMENUMS_H_INCLUDED
 
-enum buttonState{
-    B_HOVER,
+typedef enum ButtonState{
     B_FOCUS,
     B_DISABLED,
     B_ERROR
