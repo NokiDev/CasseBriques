@@ -443,3 +443,9 @@
 1434563593 source:d:\projets persos\casse brique git\windowsystem\screens\guiscreen.cpp
 	"GuiScreen.hpp"
 
+1434660221 source:d:\projets persos\casse brique git\windowsystem\buttons\guibuttontextured.cpp
+	"GuiButtonTextured.hpp"
+
+1434660957 d:\projets persos\casse brique git\windowsystem\buttons\guibuttontextured.hpp
+	"GuiButton.hpp"
+
