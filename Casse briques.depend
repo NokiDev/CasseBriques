@@ -475,3 +475,81 @@
 	"FontRenderer.hpp"
 	"WindowSystem/WindowManager.hpp"
 
+1434736655 source:d:\projets persos\cassebriques\application.cpp
+	"Application.hpp"
+	"WindowSystem/WindowManager.hpp"
+
+1434736655 d:\projets persos\cassebriques\application.hpp
+	<SFML/System.hpp>
+	<SFML/Graphics.hpp>
+	<string>
+
+1434736655 d:\projets persos\cassebriques\windowsystem\windowmanager.hpp
+	<SFML/System.hpp>
+	<SFML/Graphics.hpp>
+	<iostream>
+
+1434736655 source:d:\projets persos\cassebriques\main.cpp
+	<iostream>
+	"Application.hpp"
+
+1434736655 source:d:\projets persos\cassebriques\windowsystem\buttons\guibutton.cpp
+	"GuiButton.hpp"
+
+1434736655 d:\projets persos\cassebriques\windowsystem\buttons\guibutton.hpp
+	<SFML/Graphics.hpp>
+	"WindowSystem/WindowSystemEnums.h"
+
+1434736655 source:d:\projets persos\cassebriques\windowsystem\buttons\guibuttonmenu.cpp
+	"GuiButtonMenu.hpp"
+	"WindowSystem/FontRenderingSystem/FontRenderer.hpp"
+
+1434736655 d:\projets persos\cassebriques\windowsystem\buttons\guibuttonmenu.hpp
+	<iostream>
+	"GuiButton.hpp"
+
+1434736655 source:d:\projets persos\cassebriques\windowsystem\buttons\guibuttontextured.cpp
+	"GuiButtonTextured.hpp"
+
+1434736655 d:\projets persos\cassebriques\windowsystem\buttons\guibuttontextured.hpp
+	"GuiButton.hpp"
+
+1434736655 source:d:\projets persos\cassebriques\windowsystem\fontrenderingsystem\fontrenderer.cpp
+	"FontRenderer.hpp"
+	"WindowSystem/WindowManager.hpp"
+
+1434736655 d:\projets persos\cassebriques\windowsystem\fontrenderingsystem\fontrenderer.hpp
+	<SFML/Graphics.hpp>
+	<string>
+
+1434736655 source:d:\projets persos\cassebriques\windowsystem\screens\guiingame.cpp
+	"GuiIngame.hpp"
+
+1434736655 d:\projets persos\cassebriques\windowsystem\screens\guiingame.hpp
+	"GuiScreen.hpp"
+
+1434736655 d:\projets persos\cassebriques\windowsystem\screens\guiscreen.hpp
+	<list>
+	<SFML/System.hpp>
+	<SFML/Graphics.hpp>
+
+1434736709 source:d:\projets persos\cassebriques\windowsystem\screens\guimainmenu.cpp
+	"GuiMainMenu.hpp"
+	"WindowSystem/Buttons/GuiButtonMenu.hpp"
+	"WindowSystem/WindowManager.hpp"
+	"Application.hpp"
+
+1434736655 d:\projets persos\cassebriques\windowsystem\screens\guimainmenu.hpp
+	"WindowSystem/Screens/GuiScreen.hpp"
+
+1434736655 source:d:\projets persos\cassebriques\windowsystem\screens\guiscreen.cpp
+	"GuiScreen.hpp"
+	"WindowSystem/Buttons/GuiButton.hpp"
+	"WindowSystem/WindowManager.hpp"
+
+1434736655 source:d:\projets persos\cassebriques\windowsystem\windowmanager.cpp
+	"WindowManager.hpp"
+	"Application.hpp"
+	"Screens/GuiMainMenu.hpp"
+	"Screens/GuiScreen.hpp"
+

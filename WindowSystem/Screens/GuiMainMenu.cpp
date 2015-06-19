@@ -19,7 +19,7 @@ GuiMainMenu::~GuiMainMenu()
 void GuiMainMenu::initGui()
 {
     buttonList.push_back(new GuiButtonMenu(0,m_width/2 - 50, m_height/2 - 100, 100, 50, "Jouer"));
-    buttonList.push_back(new GuiButtonMenu(1,m_width/2 - 50, m_height/2 - 100 + 60, 100, 50, "Options", B_DISABLED));
+    buttonList.push_back(new GuiButtonMenu(1,m_width/2 - 50, m_height/2 - 100 + 60, 100, 50, "Options"));
     buttonList.push_back(new GuiButtonMenu(2,m_width/2 - 50, m_height/2 - 100 + 120, 100, 50, "Quitter"));
     GuiScreen::initGui();
 }
