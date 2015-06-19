@@ -15,7 +15,7 @@ class GuiScreen;
 class WindowManager
 {
     public :
-        static WindowManager * WINDOW_MANAGER;
+        static WindowManager * WINDOW_MANAGER;///Variable static pour plus d'accessibilité
         WindowManager(Application* application, int winWidth, int winHeight, std::string winName);
         ~WindowManager();
 

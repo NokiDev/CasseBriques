@@ -4,19 +4,19 @@
 #include <list>
 #include <SFML/System.hpp>
 #include <SFML/Graphics.hpp>
-
+///Class virtuell liste de fonction par défaut d'un GUI
 class GuiButton;
 class GuiScreen
 {
     public :
         virtual ~GuiScreen();
-        virtual void initGui();
-        virtual void draw();
-        virtual void update();
-        virtual void handleInput(sf::Event & event);
-        virtual void actionPerformed(GuiButton& guiButton);
-        virtual void onGuiClosed();
-        virtual bool doesGuiPauseGame();
+        virtual void initGui();///Initialise les bouttons
+        virtual void draw();///Dessine le GUI
+        virtual void update();///Met a jour le GUI
+        virtual void handleInput(sf::Event & event);///Traite les evenement clavier pour les interfaces qui mettent en pause le jeu
+        virtual void actionPerformed(GuiButton& guiButton);///Action effectué sur le bouton passé en param
+        virtual void onGuiClosed();///Action lorsque le GUI est fermé
+        virtual bool doesGuiPauseGame();///Est ce que le jeu est mis en pause
 
     protected :
         void KeyBoardUp();
