@@ -1,17 +1,19 @@
 #ifndef GUIMAINMENU_HPP_INCLUDED
 #define GUIMAINMENU_HPP_INCLUDED
 
-class GuiMainMenu
+#include "WindowSystem/Screens/GuiScreen.hpp"
+
+class GuiButton;
+class GuiMainMenu : public GuiScreen
 {
     public :
         GuiMainMenu();
         ~GuiMainMenu();
 
         virtual void initGui();
-        virtual void update();
         virtual void draw();
-
-        virtual void actionPerformed();
+        virtual void update();
+        virtual void actionPerformed(GuiButton& guiButton);
 
     private :
 

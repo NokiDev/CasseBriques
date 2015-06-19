@@ -391,7 +391,7 @@
 	<string>
 	<vector>
 
-1434667754 d:\projets persos\casse brique git\windowsystem\windowmanager.hpp
+1434710519 d:\projets persos\casse brique git\windowsystem\windowmanager.hpp
 	<SFML/System.hpp>
 	<SFML/Graphics.hpp>
 	<iostream>
@@ -407,9 +407,10 @@
 1434563593 source:d:\projets persos\casse brique git\windowsystem\guiscreen.cpp
 	"GuiScreen.hpp"
 
-1434667737 source:d:\projets persos\casse brique git\windowsystem\windowmanager.cpp
+1434717697 source:d:\projets persos\casse brique git\windowsystem\windowmanager.cpp
 	"WindowManager.hpp"
 	"Application.hpp"
+	"Screens/GuiMainMenu.hpp"
 	"Screens/GuiScreen.hpp"
 
 1434567792 source:d:\projets persos\casse brique git\windowsystem\guibutton.cpp
@@ -419,7 +420,7 @@
 
 1434567707 d:\projets persos\casse brique git\windowsystem\guimainmenu.hpp
 
-1434649667 source:d:\projets persos\casse brique git\windowsystem\buttons\guibutton.cpp
+1434681541 source:d:\projets persos\casse brique git\windowsystem\buttons\guibutton.cpp
 	"GuiButton.hpp"
 
 1434649675 d:\projets persos\casse brique git\windowsystem\buttons\guibutton.hpp
@@ -434,17 +435,23 @@
 1434564546 d:\projets persos\casse brique git\windowsystem\screens\guiingame.hpp
 	"GuiScreen.hpp"
 
-1434681559 d:\projets persos\casse brique git\windowsystem\screens\guiscreen.hpp
-	"WindowSystem/Buttons/GuiButton.hpp"
+1434717441 d:\projets persos\casse brique git\windowsystem\screens\guiscreen.hpp
 	<list>
+	<SFML/System.hpp>
+	<SFML/Graphics.hpp>
 
-1434583680 source:d:\projets persos\casse brique git\windowsystem\screens\guimainmenu.cpp
+1434718077 source:d:\projets persos\casse brique git\windowsystem\screens\guimainmenu.cpp
 	"GuiMainMenu.hpp"
+	"WindowSystem/Buttons/GuiButtonMenu.hpp"
+	"WindowSystem/WindowManager.hpp"
 
-1434567707 d:\projets persos\casse brique git\windowsystem\screens\guimainmenu.hpp
+1434717421 d:\projets persos\casse brique git\windowsystem\screens\guimainmenu.hpp
+	"WindowSystem/Screens/GuiScreen.hpp"
 
-1434563593 source:d:\projets persos\casse brique git\windowsystem\screens\guiscreen.cpp
+1434718128 source:d:\projets persos\casse brique git\windowsystem\screens\guiscreen.cpp
 	"GuiScreen.hpp"
+	"WindowSystem/Buttons/GuiButton.hpp"
+	"WindowSystem/WindowManager.hpp"
 
 1434660221 source:d:\projets persos\casse brique git\windowsystem\buttons\guibuttontextured.cpp
 	"GuiButtonTextured.hpp"
@@ -452,10 +459,11 @@
 1434660957 d:\projets persos\casse brique git\windowsystem\buttons\guibuttontextured.hpp
 	"GuiButton.hpp"
 
-1434667717 source:d:\projets persos\casse brique git\windowsystem\buttons\guibuttonmenu.cpp
+1434718003 source:d:\projets persos\casse brique git\windowsystem\buttons\guibuttonmenu.cpp
 	"GuiButtonMenu.hpp"
+	"WindowSystem/FontRenderingSystem/FontRenderer.hpp"
 
-1434667708 d:\projets persos\casse brique git\windowsystem\buttons\guibuttonmenu.hpp
+1434710179 d:\projets persos\casse brique git\windowsystem\buttons\guibuttonmenu.hpp
 	"GuiButton.hpp"
 
 1434668572 d:\projets persos\casse brique git\windowsystem\fontrenderingsystem\fontrenderer.hpp

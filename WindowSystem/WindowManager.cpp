@@ -1,16 +1,17 @@
 #include "WindowManager.hpp"
 #include "Application.hpp"
+#include "Screens/GuiMainMenu.hpp"
 #include "Screens/GuiScreen.hpp"
 
 WindowManager* WindowManager::WINDOW_MANAGER;
 
 WindowManager::WindowManager(Application* application, int winWidth, int winHeight, std::string winName)
 {
-    //displayScreen(new GuiMainMenu());
     m_currentGuiScreen = nullptr;
     m_application = application;
     m_window.create(sf::VideoMode(winWidth, winHeight), winName);
     WindowManager::WINDOW_MANAGER = this;
+    displayScreen(new GuiMainMenu());
 }
 
 WindowManager::~WindowManager()
@@ -80,6 +81,15 @@ void WindowManager::displaySubScreen()
 
 void WindowManager::displayScreen(GuiScreen* guiScreen)
 {
+    if(m_currentGuiScreen != nullptr)
+    {
+        delete m_currentGuiScreen;
+    }
+    if(guiScreen == nullptr)
+    {
+        m_currentGuiScreen = new GuiMainMenu();
+        return;
+    }
     m_currentGuiScreen = guiScreen;
 }
 

@@ -7,13 +7,15 @@
 class FontRenderer
 {
     public:
-        static void initFont();
+        static FontRenderer FONT_RENDERER;
+        FontRenderer();
+        ~FontRenderer();
 
-        static void printString(std::string str, int x, int y, sf::Color color, int charSize);
-        static void printCenteredString(std::string str, int x, int y, int rectWidth, int rectHeight,  sf::Color color, int charSize);
+        void printString(std::string str, int x, int y, sf::Color color, int charSize);
+        void printCenteredString(std::string str, int x, int y, int rectWidth, int rectHeight,  sf::Color color, int charSize);
 
     private:
-        static sf::Font m_font;
+        sf::Font m_font;
 
 };
 

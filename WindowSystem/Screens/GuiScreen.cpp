@@ -1,5 +1,9 @@
 #include "GuiScreen.hpp"
+#include "WindowSystem/Buttons/GuiButton.hpp"
 #include "WindowSystem/WindowManager.hpp"
+
+
+GuiScreen::~GuiScreen(){}
 
 void GuiScreen::initGui()
 {
@@ -44,6 +48,7 @@ void GuiScreen::draw()
     for (it=buttonList.begin(); it!= buttonList.end(); it++)
     {
         GuiButton *button =  *it;
+        std::cout<<"Test Draw Button id = "<<button->getId()<<std::endl;
         button->draw();
     }
 }

@@ -1,9 +1,11 @@
 #ifndef GUISCREEN_HPP_INCLUDED
 #define GUISCREEN_HPP_INCLUDED
 
-#include "WindowSystem/Buttons/GuiButton.hpp"
 #include <list>
+#include <SFML/System.hpp>
+#include <SFML/Graphics.hpp>
 
+class GuiButton;
 class GuiScreen
 {
     public :

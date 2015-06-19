@@ -1,11 +1,11 @@
 #include "FontRenderer.hpp"
 #include "WindowSystem/WindowManager.hpp"
 
-sf::Font FontRenderer::m_font;
+FontRenderer FontRenderer::FONT_RENDERER;
 
-void FontRenderer::initFont()
+void FontRenderer::FontRenderer()
 {
-    if(!FontRenderer::m_font.loadFromFile("Ressources/Fonts/PixelFont.ttf"))
+    if(!m_font.loadFromFile("Ressources/Fonts/PixelFont.ttf"))
     {
         exit(0);
     }
@@ -14,7 +14,7 @@ void FontRenderer::initFont()
 void FontRenderer::printString(std::string str, int x, int y, sf::Color color, int charSize)
 {
     sf::Text text;
-    text.setFont(FontRenderer::m_font);
+    text.setFont(m_font);
     text.setString(str);
     text.setColor(color);
     text.setCharacterSize(charSize);
@@ -26,7 +26,7 @@ void FontRenderer::printString(std::string str, int x, int y, sf::Color color, i
 void FontRenderer::printCenteredString(std::string str, int x, int y, int rectWidth,int rectHeight, sf::Color color, int charSize)
 {
     sf::Text text;
-    text.setFont(FontRenderer::m_font);
+    text.setFont(m_font);
     text.setString(str);
     text.setColor(color);
     text.setCharacterSize(charSize);

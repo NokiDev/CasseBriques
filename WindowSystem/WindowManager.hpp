@@ -9,7 +9,7 @@ ainsi que les "Scenes"(Menu Pause, menu principal etc...)
 #include <SFML/System.hpp>
 #include <SFML/Graphics.hpp>
 #include <iostream>
-class GuiScreen;
+
 class Application;
 class GuiScreen;
 class WindowManager

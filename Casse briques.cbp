@@ -14,6 +14,7 @@
 				<Compiler>
 					<Add option="-std=c++11" />
 					<Add option="-g" />
+					<Add directory="../Casse Brique Git" />
 				</Compiler>
 				<Linker>
 					<Add library="sfml-graphics-d" />
@@ -49,14 +50,20 @@
 		</Linker>
 		<Unit filename="Application.cpp" />
 		<Unit filename="Application.hpp" />
-		<Unit filename="WindowSystem/GuiButton.cpp" />
-		<Unit filename="WindowSystem/GuiButton.hpp" />
-		<Unit filename="WindowSystem/GuiIngame.cpp" />
-		<Unit filename="WindowSystem/GuiIngame.hpp" />
-		<Unit filename="WindowSystem/GuiMainMenu.cpp" />
-		<Unit filename="WindowSystem/GuiMainMenu.hpp" />
-		<Unit filename="WindowSystem/GuiScreen.cpp" />
-		<Unit filename="WindowSystem/GuiScreen.hpp" />
+		<Unit filename="WindowSystem/Buttons/GuiButton.cpp" />
+		<Unit filename="WindowSystem/Buttons/GuiButton.hpp" />
+		<Unit filename="WindowSystem/Buttons/GuiButtonMenu.cpp" />
+		<Unit filename="WindowSystem/Buttons/GuiButtonMenu.hpp" />
+		<Unit filename="WindowSystem/Buttons/GuiButtonTextured.cpp" />
+		<Unit filename="WindowSystem/Buttons/GuiButtonTextured.hpp" />
+		<Unit filename="WindowSystem/FontRenderingSystem/FontRenderer.cpp" />
+		<Unit filename="WindowSystem/FontRenderingSystem/FontRenderer.hpp" />
+		<Unit filename="WindowSystem/Screens/GuiIngame.cpp" />
+		<Unit filename="WindowSystem/Screens/GuiIngame.hpp" />
+		<Unit filename="WindowSystem/Screens/GuiMainMenu.cpp" />
+		<Unit filename="WindowSystem/Screens/GuiMainMenu.hpp" />
+		<Unit filename="WindowSystem/Screens/GuiScreen.cpp" />
+		<Unit filename="WindowSystem/Screens/GuiScreen.hpp" />
 		<Unit filename="WindowSystem/WindowManager.cpp" />
 		<Unit filename="WindowSystem/WindowManager.hpp" />
 		<Unit filename="WindowSystem/WindowSystemEnums.h" />
