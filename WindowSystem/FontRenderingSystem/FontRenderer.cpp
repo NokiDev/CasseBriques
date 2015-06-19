@@ -24,7 +24,6 @@ void FontRenderer::printString(std::string str, int x, int y, sf::Color color, i
     text.setColor(color);
     text.setCharacterSize(charSize);
     text.setPosition(x,y);
-
     WindowManager::WINDOW_MANAGER->draw(text);
 }
 

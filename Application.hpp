@@ -22,6 +22,7 @@ class Application
 {
     public :
         static float DELTA_TIME;
+        static Application* APP;
         Application(int windowWidth = 720, int windowHeight = 480, std::string windowName = "Mon jeu");
         ~Application();
 

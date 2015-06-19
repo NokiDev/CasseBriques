@@ -19,11 +19,11 @@ GuiButtonMenu::~GuiButtonMenu()
 
 void GuiButtonMenu::draw()
 {
-    sf::Color color(0,0,0);
+    sf::Color color(127,127,127);
     if(m_buttonState == B_FOCUS)
         color = sf::Color(255,255,255);
     else if(m_buttonState == B_DISABLED)
-        color = sf::Color(127,127,127);
+        color = sf::Color(10,10,10);
 
     std::cout<<"Position <"<< m_position.x<<","<<m_position.y<<">"<<std::endl;
 

@@ -48,7 +48,6 @@ void GuiScreen::draw()
     for (it=buttonList.begin(); it!= buttonList.end(); it++)
     {
         GuiButton *button =  *it;
-        std::cout<<"Test Draw Button id = "<<button->getId()<<std::endl;
         button->draw();
     }
 }
@@ -137,8 +136,16 @@ void GuiScreen::KeyBoardDown()
                 }
             }
         }
+
         if(nextButton != nullptr)
+        {
             selectedButton = nextButton;
+            if(nextButton->getState() == B_DISABLED)
+            {
+                KeyBoardDown();
+                return;
+            }
+        }
     }
 }
 /****/
@@ -183,7 +190,14 @@ void GuiScreen::KeyBoardUp()
             }
         }
         if(nextButton != nullptr)
+        {
             selectedButton = nextButton;
+            if(nextButton->getState() == B_DISABLED)
+            {
+                KeyBoardUp();
+                return;
+            }
+        }
     }
 }
 
@@ -228,7 +242,14 @@ void GuiScreen::KeyBoardLeft()
             }
         }
         if(nextButton != nullptr)
+        {
             selectedButton = nextButton;
+            if(nextButton->getState() == B_DISABLED)
+            {
+                KeyBoardLeft();
+                return;
+            }
+        }
     }
 }
 
@@ -275,7 +296,14 @@ void GuiScreen::KeyBoardRight()
             }
         }
         if(nextButton != nullptr)
+        {
             selectedButton = nextButton;
+            if(nextButton->getState() == B_DISABLED)
+            {
+                KeyBoardRight();
+                return;
+            }
+        }
     }
 }
 

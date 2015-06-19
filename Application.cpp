@@ -2,9 +2,11 @@
 #include "WindowSystem/WindowManager.hpp"
 
 float Application::DELTA_TIME;
+Application* Application::APP;
 
 Application::Application(int windowWidth, int windowHeight, std::string windowName)
 {
+    Application::APP = this;
     m_running = true;
     m_pause = false;
     m_windowManager = new WindowManager(this, windowWidth, windowHeight, windowName);
