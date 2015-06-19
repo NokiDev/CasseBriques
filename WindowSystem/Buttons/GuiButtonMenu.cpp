@@ -27,5 +27,5 @@ void GuiButtonMenu::draw()
 
     std::cout<<"Position <"<< m_position.x<<","<<m_position.y<<">"<<std::endl;
 
-    FontRenderer::printCenteredString(m_displayString, m_position.x, m_position.y, m_width, m_height, color, 28);
+    FontRenderer::FONT_RENDERER.printCenteredString(m_displayString, m_position.x, m_position.y, m_width, m_height, color, 28);
 }

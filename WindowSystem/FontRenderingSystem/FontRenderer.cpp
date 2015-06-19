@@ -3,12 +3,17 @@
 
 FontRenderer FontRenderer::FONT_RENDERER;
 
-void FontRenderer::FontRenderer()
+FontRenderer::FontRenderer()
 {
     if(!m_font.loadFromFile("Ressources/Fonts/PixelFont.ttf"))
     {
         exit(0);
     }
+}
+
+FontRenderer::~FontRenderer()
+{
+
 }
 
 void FontRenderer::printString(std::string str, int x, int y, sf::Color color, int charSize)
