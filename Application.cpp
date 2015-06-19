@@ -1,5 +1,6 @@
 #include "Application.hpp"
 #include "WindowSystem/WindowManager.hpp"
+#include "WindowSystem/FontRenderingSystem/FontRenderer.hpp"
 
 float Application::DELTA_TIME;
 
@@ -8,7 +9,7 @@ Application::Application(int windowWidth, int windowHeight, std::string windowNa
     m_running = true;
     m_pause = false;
     m_windowManager = new WindowManager(this, windowWidth, windowHeight, windowName);
-
+    FontRenderer::initFont();
 }
 
 Application::~Application()

@@ -2,6 +2,7 @@
 #define WINDOWSYSTEMENUMS_H_INCLUDED
 
 typedef enum ButtonState{
+    B_DEFAULT,
     B_FOCUS,
     B_DISABLED,
     B_ERROR

@@ -28,6 +28,9 @@ class WindowManager
         void displayScreen(GuiScreen* screen);
         void displaySubScreen();
 
+        unsigned int getWidth();
+        unsigned int getHeight();
+
     private:
         sf::Event m_event;
         sf::RenderWindow m_window;

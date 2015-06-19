@@ -1,6 +1,6 @@
 #include "WindowManager.hpp"
-#include "../Application.hpp"
-#include "GuiScreen.hpp"
+#include "Application.hpp"
+#include "Screens/GuiScreen.hpp"
 
 WindowManager* WindowManager::WINDOW_MANAGER;
 
@@ -81,4 +81,14 @@ void WindowManager::displaySubScreen()
 void WindowManager::displayScreen(GuiScreen* guiScreen)
 {
     m_currentGuiScreen = guiScreen;
+}
+
+unsigned int WindowManager::getWidth()
+{
+    return m_window.getSize().x;
+}
+
+unsigned int WindowManager::getHeight()
+{
+    return m_window.getSize().y;
 }
