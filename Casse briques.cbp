@@ -50,6 +50,18 @@
 		</Linker>
 		<Unit filename="Application.cpp" />
 		<Unit filename="Application.hpp" />
+		<Unit filename="GameSystem/Ball.cpp" />
+		<Unit filename="GameSystem/Ball.hpp" />
+		<Unit filename="GameSystem/Brick.cpp" />
+		<Unit filename="GameSystem/Brick.hpp" />
+		<Unit filename="GameSystem/Drop.cpp" />
+		<Unit filename="GameSystem/Drop.hpp" />
+		<Unit filename="GameSystem/MapSystem/CollisionsSystem/Collision.cpp" />
+		<Unit filename="GameSystem/MapSystem/CollisionsSystem/Collision.hpp" />
+		<Unit filename="GameSystem/MapSystem/World.cpp" />
+		<Unit filename="GameSystem/MapSystem/World.hpp" />
+		<Unit filename="GameSystem/Racket.cpp" />
+		<Unit filename="GameSystem/Racket.hpp" />
 		<Unit filename="WindowSystem/Buttons/GuiButton.cpp" />
 		<Unit filename="WindowSystem/Buttons/GuiButton.hpp" />
 		<Unit filename="WindowSystem/Buttons/GuiButtonMenu.cpp" />

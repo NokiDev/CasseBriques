@@ -1,0 +1,6 @@
+#ifndef BALL_HPP_INCLUDED
+#define BALL_HPP_INCLUDED
+
+
+
+#endif // BALL_HPP_INCLUDED

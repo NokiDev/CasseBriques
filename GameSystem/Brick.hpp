@@ -1,0 +1,6 @@
+#ifndef BRICK_HPP_INCLUDED
+#define BRICK_HPP_INCLUDED
+
+
+
+#endif // BRICK_HPP_INCLUDED
