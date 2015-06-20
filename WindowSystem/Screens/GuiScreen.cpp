@@ -7,10 +7,10 @@ GuiScreen::~GuiScreen(){}
 
 void GuiScreen::initGui()
 {
-    if (buttonList.size()>0)
+    if (buttonList.size()>0) /// On vérifie la taille de la liste de boutons
     {
         ite = buttonList.begin();
-        selectedButton = *ite;
+        selectedButton = *ite;/// Le bouton séléctionné par défaut est le premier
         if(selectedButton->getState() == B_DISABLED)
         {
             if(ite == buttonList.end())
@@ -71,6 +71,8 @@ void GuiScreen::handleInput(sf::Event& event)
             case sf::Keyboard::Escape:
             WindowManager::WINDOW_MANAGER->displayScreen(nullptr);
             break;
+            default:
+                break;
         }
     }
 }

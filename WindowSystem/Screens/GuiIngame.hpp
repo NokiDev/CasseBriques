@@ -1,4 +1,4 @@
-#ifndef GUIINGAME_HPP_INCLUDED
+  #ifndef GUIINGAME_HPP_INCLUDED
 #define GUIINGAME_HPP_INCLUDED
 
 #include "GuiScreen.hpp"
@@ -12,6 +12,8 @@ class GuiIngame
         virtual void initGui();
         virtual void update();
         virtual void draw();
+
+
     private :
 
 };
