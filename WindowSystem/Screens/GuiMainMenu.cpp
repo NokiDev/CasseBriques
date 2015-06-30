@@ -3,6 +3,7 @@
 #include "WindowSystem/Buttons/GuiButtonMenu.hpp"
 #include "WindowSystem/WindowManager.hpp"
 #include "Application.hpp"
+#include "WindowSystem/FontRenderingSystem/FontRenderer.hpp"
 
 GuiMainMenu::GuiMainMenu()
 {
@@ -32,6 +33,7 @@ void GuiMainMenu::update()
 void GuiMainMenu::draw()
 {
     GuiScreen::draw();
+    FontRenderer::FONT_RENDERER.printString("Casse Briques",m_width/2 - 125, m_height/2 - 175, sf::Color(255,255,255), 32);
 }
 
 void GuiMainMenu::actionPerformed(GuiButton& guiButton)

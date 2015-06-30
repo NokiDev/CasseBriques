@@ -56,6 +56,10 @@
 		<Unit filename="GameSystem/Brick.hpp" />
 		<Unit filename="GameSystem/Drop.cpp" />
 		<Unit filename="GameSystem/Drop.hpp" />
+		<Unit filename="GameSystem/EffectsSystem/Effects.cpp" />
+		<Unit filename="GameSystem/EffectsSystem/effects.hpp" />
+		<Unit filename="GameSystem/EntitySystem/Entity.cpp" />
+		<Unit filename="GameSystem/EntitySystem/Entity.hpp" />
 		<Unit filename="GameSystem/MapSystem/CollisionsSystem/Collision.cpp" />
 		<Unit filename="GameSystem/MapSystem/CollisionsSystem/Collision.hpp" />
 		<Unit filename="GameSystem/MapSystem/World.cpp" />
