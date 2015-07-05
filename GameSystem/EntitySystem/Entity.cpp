@@ -3,12 +3,13 @@
 
 Entity::~Entity(){}
 
-void Entity::update()
-{
+void Entity::update(){}
 
-}
+void Entity::draw(){}
 
-void Entity::draw()
+void Entity::onCollision(){}
+
+void Entity::checkCollisions()
 {
 
 }
@@ -69,4 +70,8 @@ sf::Vector2f Entity::getPosition()
 float Entity::getSpeed()
 {
     return m_speed;
+}
+EntityType Entity::getType()
+{
+    return m_entityType;
 }

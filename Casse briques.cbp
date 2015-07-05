@@ -14,7 +14,7 @@
 				<Compiler>
 					<Add option="-std=c++11" />
 					<Add option="-g" />
-					<Add directory="../Casse Brique Git" />
+					<Add directory="../CasseBriques" />
 				</Compiler>
 				<Linker>
 					<Add library="sfml-graphics-d" />
@@ -50,22 +50,22 @@
 		</Linker>
 		<Unit filename="Application.cpp" />
 		<Unit filename="Application.hpp" />
-		<Unit filename="GameSystem/Ball.cpp" />
-		<Unit filename="GameSystem/Ball.hpp" />
-		<Unit filename="GameSystem/Brick.cpp" />
-		<Unit filename="GameSystem/Brick.hpp" />
-		<Unit filename="GameSystem/Drop.cpp" />
-		<Unit filename="GameSystem/Drop.hpp" />
 		<Unit filename="GameSystem/EffectsSystem/Effects.cpp" />
 		<Unit filename="GameSystem/EffectsSystem/effects.hpp" />
+		<Unit filename="GameSystem/EntitySystem/Ball.cpp" />
+		<Unit filename="GameSystem/EntitySystem/Ball.hpp" />
+		<Unit filename="GameSystem/EntitySystem/Brick.cpp" />
+		<Unit filename="GameSystem/EntitySystem/Brick.hpp" />
+		<Unit filename="GameSystem/EntitySystem/Drop.cpp" />
+		<Unit filename="GameSystem/EntitySystem/Drop.hpp" />
 		<Unit filename="GameSystem/EntitySystem/Entity.cpp" />
 		<Unit filename="GameSystem/EntitySystem/Entity.hpp" />
+		<Unit filename="GameSystem/EntitySystem/Racket.cpp" />
+		<Unit filename="GameSystem/EntitySystem/Racket.hpp" />
 		<Unit filename="GameSystem/MapSystem/CollisionsSystem/Collision.cpp" />
 		<Unit filename="GameSystem/MapSystem/CollisionsSystem/Collision.hpp" />
 		<Unit filename="GameSystem/MapSystem/World.cpp" />
 		<Unit filename="GameSystem/MapSystem/World.hpp" />
-		<Unit filename="GameSystem/Racket.cpp" />
-		<Unit filename="GameSystem/Racket.hpp" />
 		<Unit filename="WindowSystem/Buttons/GuiButton.cpp" />
 		<Unit filename="WindowSystem/Buttons/GuiButton.hpp" />
 		<Unit filename="WindowSystem/Buttons/GuiButtonMenu.cpp" />

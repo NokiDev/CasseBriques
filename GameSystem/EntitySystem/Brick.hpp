@@ -1,10 +1,14 @@
 #ifndef BRICK_HPP_INCLUDED
 #define BRICK_HPP_INCLUDED
+#include "Entity.hpp"
 
-class Brick
+const int BRICK_WIDTH = 75;
+const int BRICK_HEIGHT = 40;
+
+class Brick : public Entity
 {
     public :
-        Brick();
+        Brick(int posX, int posY, unsigned int health);
         ~Brick();
 
         virtual void update();

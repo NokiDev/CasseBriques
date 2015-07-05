@@ -1,5 +1,7 @@
 #include "Application.hpp"
 #include "WindowSystem/WindowManager.hpp"
+#include "GameSystem/MapSystem/World.hpp"
+#include "WindowSystem/Screens/GuiIngame.hpp"
 
 float Application::DELTA_TIME;
 Application* Application::APP;
@@ -10,6 +12,7 @@ Application::Application(int windowWidth, int windowHeight, std::string windowNa
     m_running = true;
     m_pause = false;
     m_windowManager = new WindowManager(this, windowWidth, windowHeight, windowName);
+    theWorld= nullptr;
 }
 
 Application::~Application()
@@ -36,7 +39,8 @@ void Application::run()
 
 void Application::start()
 {
-
+    theWorld = new World();
+    m_windowManager->displayScreen(new GuiIngame(theWorld));
 }
 
 void Application::stop()

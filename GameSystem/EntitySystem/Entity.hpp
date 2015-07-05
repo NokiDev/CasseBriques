@@ -3,6 +3,8 @@
 
 #include <SFML/Graphics.hpp>
 
+enum EntityType{UKNOWN, RACKET, BALL, BRICK, DROP};
+
 class Entity
 {
     public :
@@ -10,6 +12,10 @@ class Entity
 
         virtual void update();
         virtual void draw();
+        virtual void onCollision();
+
+        void checkCollisions();
+
 
         void setWidth(unsigned int width);
         void setHeight(unsigned int height);
@@ -26,16 +32,20 @@ class Entity
         float getY();
         sf::Vector2f getPosition();
         float getSpeed();
+        bool getIsMoving();
+        EntityType getType();
 
     protected :
 
         float m_speed;
+        bool m_move;
         sf::Sprite m_sprite;
         sf::Texture m_texture;
         sf::Color m_color;
         sf::Vector2f m_position;
         sf::Vector2u m_size;
         sf::Vector2f m_velocity;
+        EntityType m_entityType;
 };
 
 #endif // ENTITY_HPP_INCLUDED

@@ -3,18 +3,23 @@
 
 #include "GuiScreen.hpp"
 
-class GuiIngame
+class World;
+class GuiIngame : public GuiScreen
 {
     public :
-        GuiIngame();
+        GuiIngame(World * world);
         ~GuiIngame();
 
         virtual void initGui();
         virtual void update();
         virtual void draw();
 
+        virtual bool doesGuiPauseGame();
+
 
     private :
+
+        World* theWorld;
 
 };
 

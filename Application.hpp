@@ -17,6 +17,7 @@ Permet de relier les différents modules (Son, fenêtre, jeu)
 #include <SFML/Graphics.hpp>
 #include <string>
 
+class World;
 class WindowManager;
 class Application
 {
@@ -43,6 +44,9 @@ class Application
         WindowManager * m_windowManager;///Le gestionnaire de fenetre
         bool m_pause;///Indique si l'application est en pause
         bool m_running;///Indique si l'application est en pause
+
+        World *theWorld;
+
 };
 
 #endif // APPLICATION_HPP_INCLUDED

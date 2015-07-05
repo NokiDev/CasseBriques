@@ -1,18 +1,20 @@
 #ifndef BALL_HPP_INCLUDED
 #define BALL_HPP_INCLUDED
+#include "Entity.hpp"
 
-class Ball
+class Ball : public Entity
 {
 
     public :
         Ball();
         ~Ball();
 
-        void update();
-        void draw();
+        virtual void update();
+        virtual void draw();
 
 
     private :
+        sf::CircleShape m_crclShape;
         float m_radius;
 };
 

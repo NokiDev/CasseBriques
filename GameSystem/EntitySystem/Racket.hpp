@@ -1,7 +1,9 @@
 #ifndef RACKET_HPP_INCLUDED
 #define RACKET_HPP_INCLUDED
 
-class Racket
+#include "Entity.hpp"
+
+class Racket : public Entity
 {
     public :
         Racket();
@@ -11,6 +13,7 @@ class Racket
         virtual void draw();
 
     private :
+        sf::RectangleShape m_rectShape;
 };
 
 #endif // RACKET_HPP_INCLUDED

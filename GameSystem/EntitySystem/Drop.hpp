@@ -1,7 +1,8 @@
 #ifndef DROP_HPP_INCLUDED
 #define DROP_HPP_INCLUDED
+#include "Entity.hpp"
 
-class Drop
+class Drop : public Entity
 {
     public :
         Drop();
