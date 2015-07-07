@@ -22,12 +22,23 @@ Ball::~Ball()
 
 }
 
+void Ball::update()
+{
+    m_velocity.x = m_speed*Application::DELTA_TIME;
+    m_velocity.y = m_speed*Application::DELTA_TIME;
+}
+
+void Ball::updatePosition()
+{
+
+}
+
 void Ball::draw()
 {
     WindowManager::WINDOW_MANAGER->draw(m_crclShape);
 }
 
-void Ball::update()
+void Ball::checkCollision()
 {
 
 }

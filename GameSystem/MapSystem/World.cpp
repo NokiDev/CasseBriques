@@ -37,6 +37,24 @@ void World::update()
     {
         m_bricks[i]->update();
     }
+    theRacket->checkCollisions();
+    for(unsigned int i = 0; i< m_balls.size(); i++)
+    {
+        m_balls[i]->checkCollisions();
+    }
+    for(unsigned int i = 0; i< m_bricks.size(); i++)
+    {
+        m_bricks[i]->checkCollisions();
+    }
+    theRacket->updatePosition();
+    for(unsigned int i = 0; i< m_balls.size(); i++)
+    {
+        m_balls[i]->updatePosition();
+    }
+    for(unsigned int i = 0; i< m_bricks.size(); i++)
+    {
+        m_bricks[i]->updatePosition();
+    }
 }
 
 void World::draw()

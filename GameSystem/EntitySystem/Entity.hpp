@@ -2,6 +2,8 @@
 #define ENTITY_HPP_INCLUDED
 
 #include <SFML/Graphics.hpp>
+#include "GameSystem/MapSystem/CollisionsSystem/Collision.hpp"
+
 
 enum EntityType{UKNOWN, RACKET, BALL, BRICK, DROP};
 
@@ -11,10 +13,11 @@ class Entity
         virtual ~Entity();
 
         virtual void update();
+        virtual void updatePosition();
         virtual void draw();
-        virtual void onCollision();
+        virtual void onCollision(Entity& entity);
 
-        void checkCollisions();
+        virtual void checkCollisions();
 
 
         void setWidth(unsigned int width);

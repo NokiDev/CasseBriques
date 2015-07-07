@@ -10,8 +10,10 @@ class Racket : public Entity
         ~Racket();
 
         virtual void update();
+        virtual void updatePosition();
         virtual void draw();
 
+        virtual void checkCollisions();
     private :
         sf::RectangleShape m_rectShape;
 };

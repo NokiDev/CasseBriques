@@ -29,15 +29,18 @@ void Brick::draw()
 
 void Brick::takeDamage(int damage)
 {
-
+    int tempHealth = m_health- damage;
+    if(tempHealth <0)
+        tempHealth = 0;
+    m_health = tempHealth;
 }
 
 void Brick::setHealth(unsigned int health)
 {
-
+    m_health = health;
 }
 
 unsigned int Brick::getHealth()
 {
-
+    return m_health;
 }

@@ -486,7 +486,7 @@
 	<SFML/Graphics.hpp>
 	<string>
 
-1434754247 d:\projets persos\cassebriques\windowsystem\windowmanager.hpp
+1436283780 d:\projets persos\cassebriques\windowsystem\windowmanager.hpp
 	<SFML/System.hpp>
 	<SFML/Graphics.hpp>
 	<iostream>
@@ -563,9 +563,11 @@
 
 1434815929 source:d:\projets persos\cassebriques\gamesystem\drop.cpp
 
-1434815855 source:d:\projets persos\cassebriques\gamesystem\mapsystem\collisionssystem\collision.cpp
+1436284967 source:d:\projets persos\cassebriques\gamesystem\mapsystem\collisionssystem\collision.cpp
+	"Collision.hpp"
+	<iostream>
 
-1436117380 source:d:\projets persos\cassebriques\gamesystem\mapsystem\world.cpp
+1436286215 source:d:\projets persos\cassebriques\gamesystem\mapsystem\world.cpp
 	"World.hpp"
 	"GameSystem/EntitySystem/Racket.hpp"
 	"GameSystem/EntitySystem/Ball.hpp"
@@ -575,27 +577,28 @@
 
 1435629076 source:d:\projets persos\cassebriques\gamesystem\effectssystem\effects.cpp
 
-1435717891 source:d:\projets persos\cassebriques\gamesystem\entitysystem\entity.cpp
+1436286189 source:d:\projets persos\cassebriques\gamesystem\entitysystem\entity.cpp
 	"Entity.hpp"
 
-1435717658 d:\projets persos\cassebriques\gamesystem\entitysystem\entity.hpp
+1436286045 d:\projets persos\cassebriques\gamesystem\entitysystem\entity.hpp
 	<SFML/Graphics.hpp>
+	"GameSystem/MapSystem/CollisionsSystem/Collision.hpp"
 
 1436117439 source:d:\projets persos\cassebriques\gamesystem\entitysystem\ball.cpp
 	"Ball.hpp"
 	"WindowSystem/WindowManager.hpp"
 
-1435935049 source:d:\projets persos\cassebriques\gamesystem\entitysystem\brick.cpp
+1436197396 source:d:\projets persos\cassebriques\gamesystem\entitysystem\brick.cpp
 	"Brick.hpp"
 
 1434815929 source:d:\projets persos\cassebriques\gamesystem\entitysystem\drop.cpp
 
-1436117262 source:d:\projets persos\cassebriques\gamesystem\entitysystem\racket.cpp
+1436286172 source:d:\projets persos\cassebriques\gamesystem\entitysystem\racket.cpp
 	"Racket.hpp"
 	"WindowSystem/WindowManager.hpp"
 	"Application.hpp"
 
-1436116481 d:\projets persos\cassebriques\gamesystem\entitysystem\racket.hpp
+1436286038 d:\projets persos\cassebriques\gamesystem\entitysystem\racket.hpp
 	"Entity.hpp"
 
 1434754210 d:\projets persos\cassebriques\windowsystem\windowsystemenums.h
@@ -609,4 +612,7 @@
 
 1435812434 d:\projets persos\cassebriques\gamesystem\entitysystem\brick.hpp
 	"Entity.hpp"
+
+1436284593 d:\projets persos\cassebriques\gamesystem\mapsystem\collisionssystem\collision.hpp
+	<SFML/Graphics.hpp>
 

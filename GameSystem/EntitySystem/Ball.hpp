@@ -10,6 +10,8 @@ class Ball : public Entity
         ~Ball();
 
         virtual void update();
+        virtual void updatePosition();
+        virtual void checkCollision();
         virtual void draw();
 
 

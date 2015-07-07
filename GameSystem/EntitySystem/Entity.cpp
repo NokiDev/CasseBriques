@@ -5,14 +5,13 @@ Entity::~Entity(){}
 
 void Entity::update(){}
 
+void Entity::updatePosition(){}
+
 void Entity::draw(){}
 
-void Entity::onCollision(){}
+void Entity::onCollision(Entity& entity){}
 
-void Entity::checkCollisions()
-{
-
-}
+void Entity::checkCollisions(){}
 
 void Entity::setWidth(unsigned int width)
 {
