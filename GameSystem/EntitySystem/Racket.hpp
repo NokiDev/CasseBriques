@@ -13,7 +13,7 @@ class Racket : public Entity
         virtual void updatePosition();
         virtual void draw();
 
-        virtual void checkCollisions();
+        virtual void checkCollisions(World& world);
     private :
         sf::RectangleShape m_rectShape;
 };

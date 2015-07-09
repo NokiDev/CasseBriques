@@ -19,6 +19,10 @@ class World
         void update();
         void draw();
 
+        Racket* getTheRacket();
+        Ball* getABall(int id);
+        Brick* getABrick(int id);
+
     private :
 
         Racket* theRacket;

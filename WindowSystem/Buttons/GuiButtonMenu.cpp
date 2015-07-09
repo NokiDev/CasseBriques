@@ -25,7 +25,5 @@ void GuiButtonMenu::draw()
     else if(m_buttonState == B_DISABLED)
         color = sf::Color(50,50,50);
 
-    std::cout<<"Position <"<< m_position.x<<","<<m_position.y<<">"<<std::endl;
-
     FontRenderer::FONT_RENDERER.printCenteredString(m_displayString, m_position.x, m_position.y, m_width, m_height, color, 28);
 }

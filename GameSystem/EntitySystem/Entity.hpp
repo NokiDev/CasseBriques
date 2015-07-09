@@ -3,7 +3,7 @@
 
 #include <SFML/Graphics.hpp>
 #include "GameSystem/MapSystem/CollisionsSystem/Collision.hpp"
-
+#include "GameSystem/MapSystem/World.hpp"
 
 enum EntityType{UKNOWN, RACKET, BALL, BRICK, DROP};
 
@@ -17,7 +17,7 @@ class Entity
         virtual void draw();
         virtual void onCollision(Entity& entity);
 
-        virtual void checkCollisions();
+        virtual void checkCollisions(World& world);
 
 
         void setWidth(unsigned int width);

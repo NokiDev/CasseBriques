@@ -48,10 +48,11 @@ void Racket::draw()
     WindowManager::WINDOW_MANAGER->draw(m_rectShape);
 }
 
-void Racket::checkCollisions()
+void Racket::checkCollisions(World& world)
 {
     sf::FloatRect winRect(0, 0, WindowManager::WINDOW_MANAGER->getWidth(), WindowManager::WINDOW_MANAGER->getHeight());
     sf::FloatRect nextRacketRect(m_position.x + m_velocity.x, m_position.y + m_velocity.y, m_size.x, m_size.y);
-    if(Collision::WindowBoundsCollision(winRect, nextRacketRect))
+    if(Collision::AABBWindowBoundsCollision(winRect, nextRacketRect))
         m_velocity = sf::Vector2f(0.f,0.f);
+    updatePosition();
 }

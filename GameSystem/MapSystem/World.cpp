@@ -1,4 +1,5 @@
 #include "World.hpp"
+#include <iostream>
 
 #include "GameSystem/EntitySystem/Racket.hpp"
 #include "GameSystem/EntitySystem/Ball.hpp"
@@ -37,23 +38,14 @@ void World::update()
     {
         m_bricks[i]->update();
     }
-    theRacket->checkCollisions();
+    theRacket->checkCollisions(*this);
     for(unsigned int i = 0; i< m_balls.size(); i++)
     {
-        m_balls[i]->checkCollisions();
+        m_balls[i]->checkCollisions(*this);
     }
     for(unsigned int i = 0; i< m_bricks.size(); i++)
     {
-        m_bricks[i]->checkCollisions();
-    }
-    theRacket->updatePosition();
-    for(unsigned int i = 0; i< m_balls.size(); i++)
-    {
-        m_balls[i]->updatePosition();
-    }
-    for(unsigned int i = 0; i< m_bricks.size(); i++)
-    {
-        m_bricks[i]->updatePosition();
+        m_bricks[i]->checkCollisions(*this);
     }
 }
 
@@ -68,4 +60,9 @@ void World::draw()
     {
         m_bricks[i]->draw();
     }
+}
+
+Racket* World::getTheRacket()
+{
+    return theRacket;
 }

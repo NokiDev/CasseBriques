@@ -11,7 +11,7 @@ void Entity::draw(){}
 
 void Entity::onCollision(Entity& entity){}
 
-void Entity::checkCollisions(){}
+void Entity::checkCollisions(World & world){}
 
 void Entity::setWidth(unsigned int width)
 {

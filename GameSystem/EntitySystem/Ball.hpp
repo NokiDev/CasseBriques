@@ -11,12 +11,13 @@ class Ball : public Entity
 
         virtual void update();
         virtual void updatePosition();
-        virtual void checkCollision();
+        virtual void checkCollisions(World& world);
         virtual void draw();
 
 
     private :
         sf::CircleShape m_crclShape;
+        sf::Vector2f m_center;
         float m_radius;
 };
 

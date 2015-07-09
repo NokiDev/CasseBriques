@@ -17,7 +17,7 @@ class Collision
         static bool CircleDroiteCollision(sf::Vector2f aPoint, sf::Vector2f bPoint, sf::Vector2f circleCenter, int radius);
         static bool CircleAABBCollision(sf::Vector2f circleCenter, int radius, sf::FloatRect AABB);///Collision type Cercle - AABB
 
-        static bool WindowBoundsCollision(sf::FloatRect winRect, sf::FloatRect AABB);
+        static bool AABBWindowBoundsCollision(sf::FloatRect winRect, sf::FloatRect AABB);
 
         static sf::Vector2f ProjectionI(sf::Vector2f A, sf::Vector2f B, sf::Vector2f C);
         static sf::Vector2f GetNormale(sf::Vector2f A, sf::Vector2f B, sf::Vector2f C);

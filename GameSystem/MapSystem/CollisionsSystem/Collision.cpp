@@ -100,8 +100,7 @@ bool Collision::CircleAABBCollision(sf::Vector2f circleCenter, int radius, sf::F
     return false;  // cas B*/
 }
 
-
-bool Collision::WindowBoundsCollision(sf::FloatRect winRect, sf::FloatRect AABB)
+bool Collision::AABBWindowBoundsCollision(sf::FloatRect winRect, sf::FloatRect AABB)
 {
     if((AABB.left < winRect.left)      // trop à droite
 	|| (AABB.left + AABB.width > winRect.left + winRect.width) // trop à gauche
@@ -125,19 +124,28 @@ sf::Vector2f Collision::ProjectionI(sf::Vector2f A, sf::Vector2f B, sf::Vector2f
 sf::Vector2f Collision::GetNormale(sf::Vector2f A, sf::Vector2f B, sf::Vector2f C)
 {
     sf::Vector2f u(B.x - A.x, B.y - A.y);
-    sf::Vector2f AC(C.x - A.x, C.y - A.y);
+    std::cout<<"u <"<<u.x<<","<<u.y<<">"<<std::endl;
+    sf::Vector2f     AC(C.x - A.x, C.y - A.y);
+    std::cout<<"AC <"<<AC.x<<","<<AC.y<<">"<<std::endl;
     float parenthesis = u.x*AC.y - u.y*AC.x;
+    std::cout<<"Parenthese "<<parenthesis<<std::endl;
     sf::Vector2f N(u.y*(parenthesis), u.x*(parenthesis));
-    float norme = sqrt(N.x*N.x + N.y*N.y);
+    std::cout<<"Normal <"<<N.x<<","<<N.y<<">"<<std::endl;
+    float norme = std::sqrt(N.x*N.x + N.y*N.y);
+    std::cout<<"Norme "<<norme<<std::endl;
     N.x /= norme;
     N.y /= norme;
+
 
     return N;
 }
 
 sf::Vector2f Collision::CalculVectorV2(sf::Vector2f v, sf::Vector2f N)
 {
+
     float pscal = (v.x*N.x + v.y*N.y);
+    std::cout<<"Normal <"<<N.x<<","<<N.y<<">"<<std::endl;
+    std::cout<<"Vector V2 Value <"<<v.x - 2*pscal * N.x<<","<<v.y -2*pscal*N.y<<">"<<std::endl;
     sf::Vector2f v2(v.x - 2*pscal * N.x, v.y -2*pscal*N.y);
     return v2;
 }
