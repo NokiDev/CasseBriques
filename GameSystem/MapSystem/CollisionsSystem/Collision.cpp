@@ -65,32 +65,41 @@ bool Collision::CircleDroiteCollision(sf::Vector2f aPoint, sf::Vector2f bPoint, 
 
 bool Collision::CircleSegmentCollision(sf::Vector2f circleCenter, int radius, sf::Vector2f pointA, sf::Vector2f pointB)///Collision type Cercle - Segement
 {
+    std::cout<<"\nTest 1";
     if(!CircleDroiteCollision(pointA, pointB, circleCenter, radius))
         return false;
+    std::cout<<" - Completed\nTest 2";
     sf::Vector2f AB(pointB.x - pointA.x, pointB.y - pointA.y);
     sf::Vector2f AC(circleCenter.x - pointA.x, circleCenter.y - pointA.y);
     sf::Vector2f BC(circleCenter.x - pointB.x, circleCenter.y - pointB.y);
     float pascal1 = AB.x * AC.x + AB.y * AC.y;
     float pascal2 = (-AB.x)*BC.x + (-AB.y)*BC.y;
+    std::cout<<" - Completed\nTest 3";
     if(pascal1 >= 0 && pascal2 >=0)
         return true;
+    std::cout<<" - Completed\nTest 4";
     if(PointCircleCollision(pointA, circleCenter, radius))
         return true;
+    std::cout<<" - Completed\nTest 5";
     if(PointCircleCollision(pointB, circleCenter, radius))
         return true;
+    std::cout<<" - Completed";
     return false;
 }
 
 bool Collision::CircleAABBCollision(sf::Vector2f circleCenter, int radius, sf::FloatRect AABB)///Collision type Cercle - AABB
 {
     sf::FloatRect boxCercle = Collision::getCircleBoundingBox(circleCenter, radius);  // retourner la bounding box de l'image porteuse, ou calculer la bounding box.
+
     if (AABBAABBCollision(AABB,boxCercle)==0)
-        return false;   // premier test
+        return false; // premier test
+
     if (Collision::PointCircleCollision(sf::Vector2f(AABB.left, AABB.top),circleCenter, radius)
     || Collision::PointCircleCollision(sf::Vector2f(AABB.left,AABB.top+AABB.height),circleCenter, radius)
     || Collision::PointCircleCollision(sf::Vector2f(AABB.left+AABB.width,AABB.top),circleCenter, radius)
     || Collision::PointCircleCollision(sf::Vector2f(AABB.left+AABB.width,AABB.top+AABB.height),circleCenter, radius))
         return true;   // deuxieme test
+
     if (Collision::PointAABBCollision(circleCenter,AABB))
         return true;   // troisieme test
 

@@ -14,8 +14,16 @@ class Ball : public Entity
         virtual void checkCollisions(World& world);
         virtual void draw();
 
+        void setCenter(sf::Vector2f);
+        void setLaunch(bool flag);
+        void setRadius(float radius);
+
+        sf::Vector2f getCenter();
+        bool getLaunch();
+        float getRadius();
 
     private :
+        bool m_launch;
         sf::CircleShape m_crclShape;
         sf::Vector2f m_center;
         float m_radius;
