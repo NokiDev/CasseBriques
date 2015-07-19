@@ -13,7 +13,7 @@ class GuiIngame : public GuiScreen
         virtual void initGui();
         virtual void update();
         virtual void draw();
-
+        virtual void handleInput(sf::Event& event);
         virtual bool doesGuiPauseGame();
 
 

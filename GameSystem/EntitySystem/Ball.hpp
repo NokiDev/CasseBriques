@@ -2,6 +2,12 @@
 #define BALL_HPP_INCLUDED
 #include "Entity.hpp"
 
+#include <cmath>
+
+#ifndef PI
+    #define PI 3.14
+#endif // PI
+
 class Ball : public Entity
 {
 
@@ -27,6 +33,7 @@ class Ball : public Entity
         sf::CircleShape m_crclShape;
         sf::Vector2f m_center;
         float m_radius;
+        double m_angle; ///Radians !!
 };
 
 #endif // BALL_HPP_INCLUDED

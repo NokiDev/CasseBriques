@@ -3,6 +3,7 @@
 
 #include <string>
 #include <vector>
+#include <SFML/Graphics.hpp>
 
 class Racket;
 class Ball;
@@ -15,9 +16,15 @@ class World
 
         void initWorld();
         void changeLevel();
-        void loadFromFile(std::string levelFile);
+        bool loadFromFile(std::string levelFile);
         void update();
         void draw();
+
+        void launchBall(sf::Vector2f speed);
+
+        unsigned int getMaxBricks();
+
+        void destroyBrick(Brick* brick);
 
         Racket* getTheRacket();
         Ball* getABall(int id);
@@ -26,6 +33,11 @@ class World
     private :
 
         Racket* theRacket;
+
+        unsigned int m_level;
+        float m_speedModifier;
+
+        unsigned int m_levelMaxBricks;
         std::vector<Brick*> m_bricks;
         std::vector<Ball*> m_balls;
 

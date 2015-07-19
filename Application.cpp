@@ -40,6 +40,7 @@ void Application::run()
 void Application::start()
 {
     theWorld = new World();
+    theWorld->loadFromFile("level-0.xml");
     m_windowManager->displayScreen(new GuiIngame(theWorld));
 }
 

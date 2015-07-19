@@ -36,21 +36,8 @@ void WindowManager::checkEvents()
         {
             m_application->resume();
         }
-        if(!m_currentGuiScreen->doesGuiPauseGame())
-        {
-            if(!m_application->isPaused())
-            {
-                if(m_event.type == sf::Event::KeyPressed)
-                {
 
-                }
-                if(m_event.type == sf::Event::KeyReleased)
-                {
-
-                }
-            }
-        }
-        else
+        if(!m_application->isPaused())
         {
             m_currentGuiScreen->handleInput(m_event);
         }

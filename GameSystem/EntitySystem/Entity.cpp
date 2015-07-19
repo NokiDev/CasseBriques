@@ -37,7 +37,7 @@ void Entity::setPosition(sf::Vector2f position)
 {
     m_position = position;
 }
-void Entity::setSpeed(float speed)
+void Entity::setSpeed(sf::Vector2f speed)
 {
     m_speed = speed;
 }
@@ -66,7 +66,11 @@ sf::Vector2f Entity::getPosition()
 {
     return m_position;
 }
-float Entity::getSpeed()
+sf::Vector2f Entity::getVelocity()
+{
+    return m_velocity;
+}
+sf::Vector2f Entity::getSpeed()
 {
     return m_speed;
 }

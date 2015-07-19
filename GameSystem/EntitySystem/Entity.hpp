@@ -26,7 +26,7 @@ class Entity
         void setX(float x);
         void setY(float y);
         void setPosition(sf::Vector2f position);
-        void setSpeed(float speed);
+        void setSpeed(sf::Vector2f speed);
 
         unsigned int getWidth();
         unsigned int getHeight();
@@ -34,13 +34,14 @@ class Entity
         float getX();
         float getY();
         sf::Vector2f getPosition();
-        float getSpeed();
+        sf::Vector2f getVelocity();
+        sf::Vector2f getSpeed();
         bool getIsMoving();
         EntityType getType();
 
     protected :
 
-        float m_speed;
+        sf::Vector2f m_speed;
         bool m_move;
         sf::Sprite m_sprite;
         sf::Texture m_texture;

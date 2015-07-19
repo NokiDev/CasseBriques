@@ -78,12 +78,20 @@
 		<Unit filename="WindowSystem/Screens/GuiIngame.hpp" />
 		<Unit filename="WindowSystem/Screens/GuiMainMenu.cpp" />
 		<Unit filename="WindowSystem/Screens/GuiMainMenu.hpp" />
+		<Unit filename="WindowSystem/Screens/GuiMapEdit.cpp" />
+		<Unit filename="WindowSystem/Screens/GuiMapEdit.hpp" />
 		<Unit filename="WindowSystem/Screens/GuiScreen.cpp" />
 		<Unit filename="WindowSystem/Screens/GuiScreen.hpp" />
 		<Unit filename="WindowSystem/WindowManager.cpp" />
 		<Unit filename="WindowSystem/WindowManager.hpp" />
 		<Unit filename="WindowSystem/WindowSystemEnums.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="tinyXml/tinystr.cpp" />
+		<Unit filename="tinyXml/tinystr.h" />
+		<Unit filename="tinyXml/tinyxml.cpp" />
+		<Unit filename="tinyXml/tinyxml.h" />
+		<Unit filename="tinyXml/tinyxmlerror.cpp" />
+		<Unit filename="tinyXml/tinyxmlparser.cpp" />
 		<Extensions>
 			<code_completion />
 			<envvars />

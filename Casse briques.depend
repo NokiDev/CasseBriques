@@ -475,7 +475,7 @@
 	"FontRenderer.hpp"
 	"WindowSystem/WindowManager.hpp"
 
-1436026578 source:d:\projets persos\cassebriques\application.cpp
+1436961543 source:d:\projets persos\cassebriques\application.cpp
 	"Application.hpp"
 	"WindowSystem/WindowManager.hpp"
 	"GameSystem/MapSystem/World.hpp"
@@ -491,7 +491,7 @@
 	<SFML/Graphics.hpp>
 	<iostream>
 
-1434736655 source:d:\projets persos\cassebriques\main.cpp
+1437226097 source:d:\projets persos\cassebriques\main.cpp
 	<iostream>
 	"Application.hpp"
 
@@ -524,11 +524,14 @@
 	<SFML/Graphics.hpp>
 	<string>
 
-1436116920 source:d:\projets persos\cassebriques\windowsystem\screens\guiingame.cpp
+1437236891 source:d:\projets persos\cassebriques\windowsystem\screens\guiingame.cpp
 	"GuiIngame.hpp"
 	"GameSystem/MapSystem/World.hpp"
+	"WindowSystem/WindowManager.hpp"
+	"WindowSystem/FontRenderingSystem/FontRenderer.hpp"
+	"GameSystem/EntitySystem/Ball.hpp"
 
-1436116921 d:\projets persos\cassebriques\windowsystem\screens\guiingame.hpp
+1437191001 d:\projets persos\cassebriques\windowsystem\screens\guiingame.hpp
 	"GuiScreen.hpp"
 
 1434755893 d:\projets persos\cassebriques\windowsystem\screens\guiscreen.hpp
@@ -536,7 +539,7 @@
 	<SFML/System.hpp>
 	<SFML/Graphics.hpp>
 
-1435209430 source:d:\projets persos\cassebriques\windowsystem\screens\guimainmenu.cpp
+1437192991 source:d:\projets persos\cassebriques\windowsystem\screens\guimainmenu.cpp
 	"GuiMainMenu.hpp"
 	"WindowSystem/Buttons/GuiButtonMenu.hpp"
 	"WindowSystem/WindowManager.hpp"
@@ -551,7 +554,7 @@
 	"WindowSystem/Buttons/GuiButton.hpp"
 	"WindowSystem/WindowManager.hpp"
 
-1434736655 source:d:\projets persos\cassebriques\windowsystem\windowmanager.cpp
+1437190373 source:d:\projets persos\cassebriques\windowsystem\windowmanager.cpp
 	"WindowManager.hpp"
 	"Application.hpp"
 	"Screens/GuiMainMenu.hpp"
@@ -563,41 +566,45 @@
 
 1434815929 source:d:\projets persos\cassebriques\gamesystem\drop.cpp
 
-1436403509 source:d:\projets persos\cassebriques\gamesystem\mapsystem\collisionssystem\collision.cpp
+1436903272 source:d:\projets persos\cassebriques\gamesystem\mapsystem\collisionssystem\collision.cpp
 	"Collision.hpp"
 	<iostream>
 
-1436411264 source:d:\projets persos\cassebriques\gamesystem\mapsystem\world.cpp
+1437225645 source:d:\projets persos\cassebriques\gamesystem\mapsystem\world.cpp
 	"World.hpp"
 	<iostream>
 	"GameSystem/EntitySystem/Racket.hpp"
 	"GameSystem/EntitySystem/Ball.hpp"
 	"GameSystem/EntitySystem/Brick.hpp"
+	"tinyXml/tinyXml.h"
+	"WindowSystem/WindowManager.hpp"
 
 1434815720 source:d:\projets persos\cassebriques\gamesystem\racket.cpp
 
 1435629076 source:d:\projets persos\cassebriques\gamesystem\effectssystem\effects.cpp
 
-1436411056 source:d:\projets persos\cassebriques\gamesystem\entitysystem\entity.cpp
+1437176236 source:d:\projets persos\cassebriques\gamesystem\entitysystem\entity.cpp
 	"Entity.hpp"
 
-1436410947 d:\projets persos\cassebriques\gamesystem\entitysystem\entity.hpp
+1437176253 d:\projets persos\cassebriques\gamesystem\entitysystem\entity.hpp
 	<SFML/Graphics.hpp>
 	"GameSystem/MapSystem/CollisionsSystem/Collision.hpp"
 	"GameSystem/MapSystem/World.hpp"
 
-1436714814 source:d:\projets persos\cassebriques\gamesystem\entitysystem\ball.cpp
+1437236842 source:d:\projets persos\cassebriques\gamesystem\entitysystem\ball.cpp
 	"Ball.hpp"
 	"WindowSystem/WindowManager.hpp"
 	"Application.hpp"
 	"Racket.hpp"
-
-1436197396 source:d:\projets persos\cassebriques\gamesystem\entitysystem\brick.cpp
 	"Brick.hpp"
+
+1437225829 source:d:\projets persos\cassebriques\gamesystem\entitysystem\brick.cpp
+	"Brick.hpp"
+	"WindowSystem/WindowManager.hpp"
 
 1434815929 source:d:\projets persos\cassebriques\gamesystem\entitysystem\drop.cpp
 
-1436411275 source:d:\projets persos\cassebriques\gamesystem\entitysystem\racket.cpp
+1437236939 source:d:\projets persos\cassebriques\gamesystem\entitysystem\racket.cpp
 	"Racket.hpp"
 	"WindowSystem/WindowManager.hpp"
 	"Application.hpp"
@@ -607,16 +614,57 @@
 
 1434754210 d:\projets persos\cassebriques\windowsystem\windowsystemenums.h
 
-1436406948 d:\projets persos\cassebriques\gamesystem\mapsystem\world.hpp
+1437190985 d:\projets persos\cassebriques\gamesystem\mapsystem\world.hpp
 	<string>
 	<vector>
-
-1436714442 d:\projets persos\cassebriques\gamesystem\entitysystem\ball.hpp
-	"Entity.hpp"
-
-1435812434 d:\projets persos\cassebriques\gamesystem\entitysystem\brick.hpp
-	"Entity.hpp"
-
-1436399167 d:\projets persos\cassebriques\gamesystem\mapsystem\collisionssystem\collision.hpp
 	<SFML/Graphics.hpp>
+
+1437096884 d:\projets persos\cassebriques\gamesystem\entitysystem\ball.hpp
+	"Entity.hpp"
+	<cmath>
+
+1437189825 d:\projets persos\cassebriques\gamesystem\entitysystem\brick.hpp
+	"Entity.hpp"
+
+1436903275 d:\projets persos\cassebriques\gamesystem\mapsystem\collisionssystem\collision.hpp
+	<SFML/Graphics.hpp>
+
+1305401098 source:d:\projets persos\cassebriques\tinyxml\tinystr.cpp
+	"tinystr.h"
+
+1305401098 d:\projets persos\cassebriques\tinyxml\tinystr.h
+	<assert.h>
+	<string.h>
+
+1305401098 source:d:\projets persos\cassebriques\tinyxml\tinyxml.cpp
+	<ctype.h>
+	<sstream>
+	<iostream>
+	"tinyxml.h"
+
+1305401098 d:\projets persos\cassebriques\tinyxml\tinyxml.h
+	<ctype.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<assert.h>
+	<string>
+	<iostream>
+	<sstream>
+	"tinystr.h"
+
+1305401098 source:d:\projets persos\cassebriques\tinyxml\tinyxmlerror.cpp
+	"tinyxml.h"
+
+1305401098 source:d:\projets persos\cassebriques\tinyxml\tinyxmlparser.cpp
+	<ctype.h>
+	<stddef.h>
+	"tinyxml.h"
+	<windows.h>
+
+1436963057 source:d:\projets persos\cassebriques\windowsystem\screens\guimapedit.cpp
+	"GuiMapEdit.hpp"
+
+1436962956 d:\projets persos\cassebriques\windowsystem\screens\guimapedit.hpp
+	"GuiScreen.hpp"
 

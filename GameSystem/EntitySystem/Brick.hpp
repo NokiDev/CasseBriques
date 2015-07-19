@@ -3,15 +3,15 @@
 #include "Entity.hpp"
 
 const int BRICK_WIDTH = 75;
-const int BRICK_HEIGHT = 40;
+const int BRICK_HEIGHT = 30;
 
 class Brick : public Entity
 {
     public :
-        Brick(int posX, int posY, unsigned int health);
+        Brick(int posX, int posY, unsigned int health, sf::Color color);
         ~Brick();
 
-        virtual void update();
+        virtual void update(World & world);
         virtual void draw();
 
         void takeDamage(int damage);

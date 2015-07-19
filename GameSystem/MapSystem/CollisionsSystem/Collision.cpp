@@ -55,7 +55,7 @@ bool Collision::CircleDroiteCollision(sf::Vector2f aPoint, sf::Vector2f bPoint, 
     float numerateur = u.x*AC.y - u.y * AC.x;
     if(numerateur < 0)
         numerateur = -numerateur;
-    float denominateur = sqrt(u.x*u.x + u.y* u.y);
+    float denominateur = std::sqrt(u.x*u.x + u.y* u.y);
     float CI = numerateur/denominateur;
     if(CI<radius)
         return true;
@@ -65,7 +65,7 @@ bool Collision::CircleDroiteCollision(sf::Vector2f aPoint, sf::Vector2f bPoint, 
 
 bool Collision::CircleSegmentCollision(sf::Vector2f circleCenter, int radius, sf::Vector2f pointA, sf::Vector2f pointB)///Collision type Cercle - Segement
 {
-    std::cout<<"\nTest 1";
+    std::cout<<"\nTest 1 Point A <"<<pointA.x<<","<<pointA.y<<"> Point B <"<<pointB.x<<","<<pointB.y<<">";
     if(!CircleDroiteCollision(pointA, pointB, circleCenter, radius))
         return false;
     std::cout<<" - Completed\nTest 2";
@@ -180,4 +180,19 @@ sf::FloatRect Collision::getCircleBoundingBox(sf::Vector2f circleCenter, int rad
     sf::FloatRect circleBB(circleCenter.x - radius, circleCenter.y - radius, radius*2, radius*2);
 
     return circleBB;
+}
+
+
+sf::Vector2f Collision::calculateDistance(sf::FloatRect box1, sf::FloatRect box2)
+{
+    sf::Vector2f vect1(box1.left, box1.top);
+    sf::Vector2f vect2(box2.left, box2.top);
+
+    sf::Vector2f distance(float(vect1.x - vect2.x), float(vect1.y - vect2.y));
+    if(distance.y<0)
+        distance.y *= -1;
+    if(distance.x<0)
+        distance.x *= -1;
+
+    return distance;
 }

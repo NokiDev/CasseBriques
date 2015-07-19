@@ -24,6 +24,8 @@ class Collision
         static sf::Vector2f CalculVectorV2(sf::Vector2f v, sf::Vector2f N);
         static bool ProjectionOnSegment(sf::Vector2f circleCenter, sf::Vector2f point1, sf::Vector2f point2);
         static sf::FloatRect getCircleBoundingBox(sf::Vector2f circleCenter, int radius);
+
+        static sf::Vector2f calculateDistance(sf::FloatRect box1, sf::FloatRect box2);
 };
 
 #endif // COLLISION_HPP_INCLUDED
